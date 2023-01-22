@@ -1,0 +1,159 @@
+body{
+    font-size: 16px;
+    color: #2B4253;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header, footer{
+    background-color: #074E7F;
+    padding: 45px 0;
+}
+footer{
+    text-align: center;
+    color: blanchedalmond;
+    
+}
+
+.container{
+    margin: 0 auto;
+    width:90%;
+    max-width: 800px;
+}
+
+
+
+/* TYPOGRAPHY */
+h1{   
+    color: whitesmoke;
+    font-size: 1.75rem;
+}
+h2{
+    margin-top: 1.75em;
+}
+.subheading{
+    display: block;
+    font-size: 1.5rem;
+    color:#77C7FF;    
+}
+p{
+    line-height: 1.5;
+}
+
+
+
+/* LINKS */
+a{
+    text-decoration: none;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.85em 0;
+    display: block;
+}
+
+.btn{
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 0.15em;    
+    width:100%;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.btn-dark{
+    font-size: 1.1em;
+    background-color:#588AAD;
+    color:whitesmoke;
+}
+.btn-mid{
+    color:#588AAD;
+    background-color: #BDD1DF;
+}
+.btn:hover,
+.btn:active{
+    background-color:#2C4F68;
+    color:whitesmoke;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+}
+
+.gallery-item{
+    
+    flex-basis: 100px;
+    flex-grow:1;
+}
+
+img{
+    max-width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+.expand{
+    flex:1 350px;
+}
+
+
+
+/* NAVIGATION */
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+nav a:hover{
+    color: #859ED0;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:767px){
+    header{
+        text-align: center;
+    }
+
+    
+    nav li:not(:last-child){
+        border-bottom:  1px dotted #a190b6;
+    }
+}
+
+
+
+@media (min-width:768px){
+    header .container, nav ul{
+        display: flex;
+    }
+    header .container{
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul{
+        gap:1em;
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    .btn{
+        display: inline;
+        margin-right: 0.5em;
+    }
+    .gallery{
+        margin-bottom: 2em;
+
+    }
+    footer{
+        margin-top: 4em;
+    }
+    
+    
+}
